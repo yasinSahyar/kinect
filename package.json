@@ -14,18 +14,19 @@
   },
   "homepage": "https://github.com/wouterverweirder/kinect2",
   "main": "lib/kinect2.js",
-	"dependencies": {
-		"node-addon-api": "^8.0.0",
-		"node-gyp-build": "^4.8.1"
-	},
-	"engines": {
-		"node": ">= 10.16.0"
-	},
+  "dependencies": {
+    "kinect2": "^0.3.0",
+    "node-addon-api": "^8.0.0",
+    "node-gyp-build": "^4.8.1"
+  },
+  "engines": {
+    "node": ">= 10.16.0"
+  },
   "scripts": {
-		"install": "node-gyp-build",
-		"compile": "prebuildify --napi",
-		"compile:win": "prebuildify --napi --platform=win32 --arch=x64",
-		"copy-dlls": "xcopy \"C:\\Program Files\\Azure Kinect Body Tracking SDK\\tools\\\" . /H /C /Y"
+    "install": "node-gyp-build",
+    "compile": "prebuildify --napi",
+    "compile:win": "prebuildify --napi --platform=win32 --arch=x64",
+    "copy-dlls": "xcopy \"C:\\Program Files\\Azure Kinect Body Tracking SDK\\tools\\\" . /H /C /Y"
   },
   "gypfile": true,
   "binary": {
@@ -33,8 +34,8 @@
       6
     ]
   },
-	"devDependencies": {
-		"prebuildify": "^6.0.1",
-		"rimraf": "^5.0.7"
-	}
+  "devDependencies": {
+    "prebuildify": "^6.0.1",
+    "rimraf": "^5.0.7"
+  }
 }
