@@ -2,7 +2,10 @@
   "name": "kinect2",
   "version": "0.3.0",
   "description": "Nodejs library to access the kinect 2 data from the official MS SDK",
-  "repository": "https://github.com/wouterverweirder/kinect2",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wouterverweirder/kinect2.git"
+  },
   "keywords": [
     "kinect2",
     "sdk"
@@ -17,7 +20,8 @@
   "dependencies": {
     "kinect2": "^0.3.0",
     "node-addon-api": "^8.0.0",
-    "node-gyp-build": "^4.8.1"
+    "node-gyp-build": "^4.8.1",
+    "ws": "^8.18.3"
   },
   "engines": {
     "node": ">= 10.16.0"
@@ -37,5 +41,9 @@
   "devDependencies": {
     "prebuildify": "^6.0.1",
     "rimraf": "^5.0.7"
+  },
+  "directories": {
+    "example": "examples",
+    "lib": "lib"
   }
 }
